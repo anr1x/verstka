@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Продажа компьютеров</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Подключение JavaScript -->
+    <script>
+        window.onload = function () {
+            const products = document.querySelectorAll('.product');
+
+            products.forEach(product => {
+                product.addEventListener('mouseover', function () {
+                    this.style.transform = 'scale(1.1)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+
+                product.addEventListener('mouseleave', function () {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш магазин компьютеров</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="laptops.html">Ноутбуки</a></li>
+            <li><a href="desktops.html">Стационарные компьютеры</a></li>
+            <li><a href="monitors.html">Мониторы</a></li>
+            <li><a href="accessories.html">Аксессуары</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="products">
+            <!-- Ваш HTML-код товаров здесь -->
+            <div class="product">
+                <img src="80ebef623e1ec6b1aa80b52517595bb0-579x579.webp" alt="Компьютер 1">
+                <h3>Компьютер 1</h3>
+                <p>Мощный компьютер с высокой производительностью.</p>
+                <p>Цена: $1000</p>
+            </div>
+
+            <div class="product">
+                <img src="pc.jpg" alt="Компьютер 2">
+                <h3>Компьютер 2</h3>
+                <p>Компактный компьютер для офисных задач.</p>
+                <p>Цена: $600</p>
+            </div>
+
+            <div class="product">
+                <img src="comp.jpg" alt="Компьютер 3">
+                <h3>Компьютер 3</h3>
+                <p>Современный компьютер с большим объемом памяти.</p>
+                <p>Цена: $1200</p>
+            </div>
+
+            <!-- Добавленные товары -->
+            <div class="product">
+                <img src="6173c215c27563.86611513.jpg" alt="Ноутбук 4">
+                <h3>Ноутбук 4</h3>
+                <p>Ноутбук для повседневных задач.</p>
+                <p>Цена: $800</p>
+            </div>
+
+            <div class="product">
+                <img src="358304126.webp" alt="Стационарный компьютер 5">
+                <h3>Стационарный компьютер 5</h3>
+                <p>Мощный ПК для игр и тяжелых задач.</p>
+                <p>Цена: $1500</p>
+            </div>
+
+            <div class="product">
+                <img src="363121322.webp" alt="Монитор 6">
+                <h3>Монитор 6</h3>
+                <p>Широкоформатный монитор с высоким разрешением.</p>
+                <p>Цена: $400</p>
+            </div>
+
+            <!-- Дополнительные товары -->
+            <!-- Добавьте больше товаров по вашему усмотрению -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Наш магазин компьютеров</p>
+    </footer>
+</body>
+</html>
